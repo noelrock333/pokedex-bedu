@@ -5,9 +5,12 @@ import PokedexLine from '../../assets/pokedex-line.svg'
 function PokedexLeft() {
     return (
         <PokedexLeftStyled>
-            <Led color="#FA2200" />
-            <Led color="#FBCB65" />
-            <Led color="#32CB65" />
+            <Led size="large" color="#FA2200" />
+            <div className="leds-row">
+                <Led color="#FA2200" />
+                <Led color="#FBCB65" />
+                <Led color="#32CB65" />
+            </div>
             <img className="pokedex-line" src={PokedexLine} />
         </PokedexLeftStyled>
     )
