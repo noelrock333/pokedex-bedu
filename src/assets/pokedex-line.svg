@@ -1,11 +1,9 @@
-<svg width="434" height="61" xmlns="http://www.w3.org/2000/svg">
-
+<svg width="471" height="61" xmlns="http://www.w3.org/2000/svg">
  <g>
   <title>Layer 1</title>
-  <g id="svg_4">
-   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1" y2="59.33327" x2="150.91671" y1="59.33327" x1="0.91671" stroke="#000" fill="none"/>
-   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="1.58325" x2="199.41666" y1="59.58325" x1="150.41666" stroke="#000" fill="none"/>
-   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="0.83327" x2="433.91661" y1="1.83327" x1="198.91661" stroke="#000" fill="none"/>
-  </g>
+  <line stroke="#000" fill="none" x1="0.91671" y1="59.33327" x2="76.91671" y2="59.33327" id="svg_1" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" x1="76.91747" y1="59.58325" x2="125.91747" y2="1.58325" id="svg_2" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line stroke="#000" fill="none" x1="124.91742" y1="1.33328" x2="470.91622" y2="0.83327" id="svg_3" stroke-linejoin="undefined" stroke-linecap="undefined"/>
  </g>
+
 </svg>
