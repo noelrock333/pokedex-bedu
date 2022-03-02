@@ -4,6 +4,8 @@ import LargeLed from '../LargeLed'
 import PokedexLine from '../../assets/pokedex-line.svg'
 import Display from '../Display'
 import Controls from '../Controls'
+import Counter from '../Counter'
+import InputName from "../InputName"
 
 function PokedexLeft() {
     return (
@@ -21,6 +23,8 @@ function PokedexLeft() {
                 <Display />
             </div>
             <Controls />
+            <Counter />
+            <InputName />
         </PokedexLeftStyled>
     )
 }

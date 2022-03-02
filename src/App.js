@@ -1,16 +1,19 @@
 import PokedexLeft from './components/PokedexLeft'
 import PokedexRight from './components/PokedexRight';
-// import ComponenteConEstado from './components/ComponenteConEstado'
-// import ComponenteSinEstado from './components/ComponenteSinEstado';
+import { Provider } from 'react-redux'
+// HOC High Order Component
+// Hooks
+
+import store from './store/index'
 
 function App() {
   return (
-    <div className="App">
-      <PokedexLeft />
-      <PokedexRight />
-      {/* <ComponenteConEstado color="green"/>
-      <ComponenteSinEstado color="green" /> */}
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <PokedexLeft />
+        <PokedexRight />
+      </div>
+    </Provider>
   );
 }
 
