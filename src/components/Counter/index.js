@@ -1,5 +1,9 @@
+import CounterStyled from "./style"
+
 function Counter() {
-  return <h1>Counter: 0</h1>
+  return (
+    <CounterStyled>#0</CounterStyled>
+  )
 }
 
 export default Counter

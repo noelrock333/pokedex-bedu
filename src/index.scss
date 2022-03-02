@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+.App {
+  display: flex;
+
+}
+
 .led {
   width: 20px;
   height: 20px;
@@ -28,5 +33,92 @@ code {
       top: 3px;
       left: 3px;
       opacity: 0.6;
+  }
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.arrows-pad {
+  width: 70px;
+  height: 66px;
+  position: relative;
+  margin-right: 40px;
+  $top: 23px;
+  $btnSize: 26px;
+  $btnWeight: 20px;
+
+  button {
+    background-color: #585858;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      fill: white;
+    }
+    &:active {
+      background-color: gray;
+    }
+  }
+
+  .up {
+    position: absolute;
+    left: 25px;
+    top: 0;
+    height: $btnSize;
+    width: $btnWeight;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    svg {
+      height: 20px;
+    }
+  }
+  .left {
+    position: absolute;
+    left: 0;
+    top: $top;
+    height: $btnWeight;
+    width: $btnSize;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 13px;
+    svg {
+      height: 11px;
+    }
+  }
+  .right {
+    position: absolute;
+    left: 44px;
+    top: $top;
+    height: $btnWeight;
+    width: $btnSize;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 4px;
+    svg {
+      height: 11px;
+    }
+  }
+  .bottom {
+    position: absolute;
+    left: 25px;
+    top: 40px;
+    height: $btnSize;
+    width: $btnWeight;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    svg {
+      height: 20px;
+    }
   }
 }

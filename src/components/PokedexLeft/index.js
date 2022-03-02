@@ -3,6 +3,7 @@ import Led from '../Led'
 import LargeLed from '../LargeLed'
 import PokedexLine from '../../assets/pokedex-line.svg'
 import Display from '../Display'
+import Controls from '../Controls'
 
 function PokedexLeft() {
     return (
@@ -19,6 +20,7 @@ function PokedexLeft() {
             <div className="display-wrapper">
                 <Display />
             </div>
+            <Controls />
         </PokedexLeftStyled>
     )
 }
