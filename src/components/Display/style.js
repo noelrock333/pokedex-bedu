@@ -32,6 +32,9 @@ export const ScreenStyled = styled.div`
     height: 150px;
     margin-top: 10px;
     border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 export default DisplayStyled

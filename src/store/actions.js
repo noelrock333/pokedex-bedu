@@ -16,6 +16,10 @@ export function setPokemonName(name) {
   return { type: 'SET_POKEMON_NAME', payload: name }
 }
 
+export function setPokemon(pokemon) {
+  return { type: 'SET_POKEMON', payload: pokemon }
+}
+
 export const fetchPokemon = (pokemonNumber) => async (dispatch) => {
   const response = await axios({
     url: `https://pokeapi.co/api/v2/pokemon/${pokemonNumber}`,
@@ -24,5 +28,6 @@ export const fetchPokemon = (pokemonNumber) => async (dispatch) => {
 
   const { name, id } = response.data
   dispatch(setPokemonName(name))
+  dispatch(setPokemon(response.data))
   dispatch(setCounter(id))
 }

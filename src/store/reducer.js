@@ -1,6 +1,7 @@
 const initialState = {
   counter: 0,
-  name: ''
+  name: '',
+  pokemon: null
 }
 
 function reducer(state = initialState, action) {
@@ -33,7 +34,13 @@ function reducer(state = initialState, action) {
     case 'SET_POKEMON_NAME': {
       return {
         ...state, // counter: 0, name: ''
-        name: payload
+        name: payload,
+      }
+    }
+    case 'SET_POKEMON': {
+      return {
+        ...state, // counter: 0, name: ''
+        pokemon: payload,
       }
     }
     default: {
